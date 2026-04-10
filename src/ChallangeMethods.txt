@@ -1,0 +1,16 @@
+Create two methods:
+
+First: displayHighScorePosition:
+
+1. Should have two parameters: Player name and Player position in a high score list.
+2. This much return a text like: "Tim managed to get into position 2 in high score list".
+
+Second: calculateHighScorePosition:
+1. Receive one parameter, The Player's score.
+2. The method should return a number between 1 and for
+{
+    1 => number >= 1000,
+    2 => number >= 500 && number < 1000,
+    3 => number >= 100 && number < 500,
+    4 => default
+}
