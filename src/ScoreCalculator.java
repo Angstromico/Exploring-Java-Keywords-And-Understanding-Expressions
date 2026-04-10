@@ -1,6 +1,6 @@
 public class ScoreCalculator {
 
-    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+    public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
         int finalScore = 0;
 
         if (gameOver) {
@@ -8,6 +8,8 @@ public class ScoreCalculator {
             finalScore += 1000;
             System.out.println("Your final score was " + finalScore);
         }
+
+        return finalScore;
     }
 
 }
