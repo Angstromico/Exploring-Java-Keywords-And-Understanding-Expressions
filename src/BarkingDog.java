@@ -14,4 +14,17 @@ public class BarkingDog {
         // In all other cases, do not wake up
         return false;
     }
+
+    // ================== MAIN METHOD FOR TESTING ==================
+    public static void main(String[] args) {
+
+        // Test cases
+        System.out.println(shouldWakeUp(true, 1));     // true
+        System.out.println(shouldWakeUp(false, 2));    // false
+        System.out.println(shouldWakeUp(true, 8));     // false
+        System.out.println(shouldWakeUp(true, -1));    // false
+        System.out.println(shouldWakeUp(true, 23));    // true
+        System.out.println(shouldWakeUp(true, 22));    // false
+        System.out.println(shouldWakeUp(false, 3));    // false
+    }
 }
